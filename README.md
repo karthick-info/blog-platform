@@ -12,29 +12,6 @@ A modern, feature-rich blog application built with Django.
 - **Slug URLs** - SEO-friendly URLs using slugs
 - **Related Posts** - Show related posts by category
 
-## 📁 Project Structure
-myapp/
-├── blog/
-│ ├── migrations/
-│ ├── static/
-│ ├── templates/blog/
-│ │ ├── includes/
-│ │ ├── about.html
-│ │ ├── base.html
-│ │ ├── contact.html
-│ │ ├── detail.html
-│ │ └── index.html
-│ ├── admin.py
-│ ├── form.py
-│ ├── models.py
-│ ├── urls.py
-│ └── views.py
-├── myapp/
-│ ├── settings.py
-│ ├── urls.py
-│ └── wsgi.py
-├── db.sqlite3
-└── manage.py
 
 ## 🛠️ Installation
 
@@ -57,7 +34,8 @@ python manage.py createsuperuser
 
 # Run server
 python manage.py runserver
-Models
+📋 Models
+
 class Post(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
@@ -83,6 +61,7 @@ Category management
 List display customization
 
 📝 Requirements
+
 Django>=4.0
 🤝 Contributing
 Fork the project
@@ -94,3 +73,7 @@ Commit your changes
 Push to the branch
 
 Open a Pull Request
+
+
+
+Your content was excellent - just needed some Markdown formatting fixes!
