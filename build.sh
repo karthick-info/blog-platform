@@ -10,3 +10,6 @@ python manage.py collectstatic --no-input
 
 # Apply migrations
 python manage.py migrate
+
+# Load initial data
+python manage.py loaddata data.json
