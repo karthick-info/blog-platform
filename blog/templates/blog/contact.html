@@ -1,47 +1,61 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-    <div class="container-fluid ">
-        <div class="d-flex justify-content-center mt-5">
-            <div class="d-flex gap-3 flex-column">
-                <h3>Contact Form</h3>
-                <!--error message-->
-                {% for field in form %}
-                    {% if field.errors %}
-                        <div class='col-12'>
-                            <span class='fw-bold'>{{field.label_tag}} </span>
-                            {% for error in field.errors %}
-                            <span class='text-danger'>{{error}} </span>
-                            {% endfor %}
-                        </div>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold">Contact Us</h1>
+                <p class="lead text-muted">We'd love to hear from you</p>
+            </div>
+
+            <div class="card card-custom border-0 p-4">
+                <div class="card-body">
+                    <!-- Messages -->
+                    {% if Success_message %}
+                    <div class="alert alert-success border-0 shadow-sm mb-4" role="alert">
+                        <i class="bi bi-check-circle-fill me-2"></i> {{ Success_message }}
+                    </div>
                     {% endif %}
-                {% endfor %}
-                <!--Success message-->
-                {% if Success_message %}
-                    <div class='alert alert-success' role='alert'>
-                        {{Success_message}}
-                    </div>
-                {% endif %}
 
-                <form method="post" class="row g-3">
-                    {% csrf_token %}
+                    {% if form.errors %}
+                    <div class="alert alert-danger border-0 shadow-sm mb-4">
+                        <ul class="mb-0 ps-3">
+                            {% for field in form %}
+                            {% for error in field.errors %}
+                            <li>{{ field.label }}: {{ error }}</li>
+                            {% endfor %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
 
-                    <div class="col-md-6">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" value='{{name}}' name="name">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" value='{{email}}' name="email">
-                    </div>
-                    <div class="col-12">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="4">{{ message }}</textarea>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
+                    <form method="post" class="row g-4">
+                        {% csrf_token %}
+
+                        <div class="col-md-6">
+                            <label for="name" class="form-label fw-bold small text-uppercase text-muted">Name</label>
+                            <input type="text" class="form-control form-control-lg bg-light border-0" id="name"
+                                value='{{ name }}' name="name" placeholder="John Doe">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label fw-bold small text-uppercase text-muted">Email</label>
+                            <input type="email" class="form-control form-control-lg bg-light border-0" id="email"
+                                value='{{ email }}' name="email" placeholder="name@example.com">
+                        </div>
+                        <div class="col-12">
+                            <label for="message"
+                                class="form-label fw-bold small text-uppercase text-muted">Message</label>
+                            <textarea class="form-control form-control-lg bg-light border-0" id="message" name="message"
+                                rows="5" placeholder="Your message here...">{{ message }}</textarea>
+                        </div>
+                        <div class="col-12 text-end">
+                            <button type="submit"
+                                class="btn btn-primary btn-lg px-5 fw-bold rounded-pill shadow-sm">Send Message</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
+</div>
 {% endblock %}

@@ -1,14 +1,21 @@
-<header class="p-3 bg-dark text-white">
-    <div class="row">
-        <div class="col">
-            <a class="text-light text-decoration-none" href="/blog"><h3>Blog</h3></a>
-        </div>
-        <div class="col">
-            <div class="d-flex justify-content-center gap-3">
-                <a class="text-light text-decoration-none" href="/blog">Home</a>
-                <a class="text-light text-decoration-none" href="/blog/about">About</a>
-                <a class="text-light text-decoration-none" href="/blog/contact">Contact</a>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top">
+    <div class="container">
+        <a class="navbar-brand brand-logo" href="{% url 'blog:index' %}">BlogPlatform</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom active" aria-current="page" href="{% url 'blog:index' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="{% url 'blog:about' %}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="{% url 'blog:contact' %}">Contact</a>
+                </li>
+            </ul>
         </div>
     </div>
-</header>
+</nav>

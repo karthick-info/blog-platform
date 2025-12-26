@@ -1,22 +1,49 @@
-{%extends 'blog/base.html'%}
+{% extends 'blog/base.html' %}
 {% block content %}
-    <div class="container-fluid ">
-        <h3>About Us</h3>
-        <div class="d-flex gap-3 justify-content-center mt-5">
-            <img src="https://picsum.photos/300/300" alt="">
-            <div class="content">
-                Welcome to our website! We are dedicated to providing high-quality products and excellent customer service. Our team consists of experienced professionals who are passionate about delivering the best solutions to our customers. With a focus on innovation and integrity, we strive to exceed expectations in every aspect of our business.
-    
-                Our company was founded on the principles of honesty, reliability, and transparency. We believe in building strong relationships with our customers and partners based on trust and mutual respect. By listening to our customers' needs and adapting to changing market trends, we continue to evolve and improve our offerings.
-                
-                At our core, we are driven by a commitment to excellence and continuous improvement. We invest in research and development to stay ahead of the curve and bring cutting-edge solutions to our customers. Our dedication to quality ensures that every product we deliver meets the highest standards of performance and reliability.
-                
-                We are proud of our track record of success and the positive impact we have made in the industry. But we are not content to rest on our laurels. We are always looking for new opportunities to grow and expand our reach, while staying true to our values and vision.
-                
-                Thank you for choosing us as your trusted partner. We look forward to serving you and exceeding your expectations for many years to come.
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold">About Us</h1>
+                <p class="lead text-muted">Dedicated to quality, innovation, and integrity</p>
             </div>
-            
+
+            <div class="card card-custom border-0 p-4">
+                <div class="row align-items-center g-5">
+                    <div class="col-md-5 text-center">
+                        <img src="https://picsum.photos/300/300" class="img-fluid rounded-circle shadow-lg"
+                            alt="About Us" style="width: 250px; height: 250px; object-fit: cover;">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="fw-bold mb-3">Our Mission</h3>
+                        <p class="text-muted mb-4">
+                            Welcome to our website! We are dedicated to providing high-quality products and excellent
+                            customer service. Our team consists of experienced professionals who are passionate about
+                            delivering the best solutions.
+                        </p>
+                        <h5 class="fw-bold mb-2">Why Choose Us?</h5>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2">✓ Commitment to excellence and quality</li>
+                            <li class="mb-2">✓ Innovative solutions for modern problems</li>
+                            <li class="mb-2">✓ Customer-centric approach based on trust</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <p class="mb-3">
+                            Our company was founded on the principles of honesty, reliability, and transparency. By
+                            listening to our customers' needs and adapting to changing market trends, we continue to
+                            evolve and improve our offerings.
+                        </p>
+                        <p>
+                            Thank you for choosing us as your trusted partner. We look forward to serving you and
+                            exceeding your expectations for many years to come.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</div>
 {% endblock %}
-    
