@@ -96,6 +96,4 @@ blog-platform/
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
+[Live Demo BlogPlatform](https://blog-platform-210l.onrender.com/blog/)
