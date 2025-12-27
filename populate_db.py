@@ -80,6 +80,18 @@ def populate():
         }
     ]
 
+    # ... existing manual posts ...
+
+    # Generate 50 algorithmic posts for pagination testing
+    for i in range(1, 51):
+        category = [tech_cat, coding_cat, lifestyle_cat][i % 3] # Rotate categories
+        posts.append({
+            'title': f'The Future of Tech: Insights Part {i}',
+            'content': f'This is a generated post to test pagination feature #{i}. In this article, we delve deep into the nuances of technology and lifestyle trends shaping {2025+i}. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'category': category,
+            'img_url': f'https://picsum.photos/seed/post{i}/800/400'
+        })
+
     for p_data in posts:
         post, created = Post.objects.get_or_create(
             title=p_data['title'],
