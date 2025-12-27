@@ -79,5 +79,65 @@
     "slug": "10-tips-for-healthy-living",
     "category": 2
   }
+},
+{
+  "model": "blog.post",
+  "pk": 6,
+  "fields": {
+    "title": "Getting Started with Python",
+    "content": "Python is one of the most popular programming languages today. Its simplicity and versatility make it perfect for beginners and experts alike. Learn the basics of variables, loops, and functions.",
+    "img_url": "https://picsum.photos/seed/python/800/400",
+    "created_at": "2025-12-27T03:34:52.950Z",
+    "slug": "getting-started-with-python",
+    "category": 3
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 7,
+  "fields": {
+    "title": "Sustainable Living Guide",
+    "content": "Small changes in your daily routine can have a big impact on the environment. Discover simple ways to reduce waste, save energy, and live a more sustainable life.",
+    "img_url": "https://picsum.photos/seed/eco/800/400",
+    "created_at": "2025-12-27T03:34:52.965Z",
+    "slug": "sustainable-living-guide",
+    "category": 2
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 8,
+  "fields": {
+    "title": "Cybersecurity Essentials",
+    "content": "In a digital world, security is paramount. Protect yourself from phishing, malware, and data breaches with these essential cybersecurity tips for personal and professional use.",
+    "img_url": "https://picsum.photos/seed/security/800/400",
+    "created_at": "2025-12-27T03:34:52.977Z",
+    "slug": "cybersecurity-essentials",
+    "category": 1
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 9,
+  "fields": {
+    "title": "The Art of Minimalist Design",
+    "content": "Minimalism is more than just a design trend; it is a philosophy. Learn how to strip away the unnecessary and focus on what truly matters in your web design projects.",
+    "img_url": "https://picsum.photos/seed/design/800/400",
+    "created_at": "2025-12-27T03:34:52.990Z",
+    "slug": "the-art-of-minimalist-design",
+    "category": 3
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 10,
+  "fields": {
+    "title": "Top Travel Destinations 2026",
+    "content": "Looking for your next adventure? From hidden gems in Europe to tropical paradises in Asia, here are the top travel destinations you must visit in 2026.",
+    "img_url": "https://picsum.photos/seed/travel/800/400",
+    "created_at": "2025-12-27T03:34:53.001Z",
+    "slug": "top-travel-destinations-2026",
+    "category": 2
+  }
 }
 ]
