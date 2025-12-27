@@ -1,2 +1,83 @@
 [
+{
+  "model": "blog.category",
+  "pk": 1,
+  "fields": {
+    "name": "Technology"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 2,
+  "fields": {
+    "name": "Lifestyle"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 3,
+  "fields": {
+    "name": "Coding"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "title": "The Future of AI",
+    "content": "Artificial Intelligence is reshaping the world as we know it. From healthcare to finance, AI algorithms are optimizing processes and creating new opportunities. In this post, we explore the potential impacts of AGI and machine learning in the next decade.",
+    "img_url": "https://picsum.photos/seed/ai/800/400",
+    "created_at": "2025-12-27T03:14:09.241Z",
+    "slug": "the-future-of-ai",
+    "category": 1
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 2,
+  "fields": {
+    "title": "Mastering Django 5",
+    "content": "Django 5 brings a host of new features including better async support and generated model fields. This guide walks you through setting up a modern Django project and deploying it to the cloud using Render.",
+    "img_url": "https://picsum.photos/seed/django/800/400",
+    "created_at": "2025-12-27T03:14:09.250Z",
+    "slug": "mastering-django-5",
+    "category": 3
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 3,
+  "fields": {
+    "title": "Remote Work Best Practices",
+    "content": "Working from home offers flexibility but comes with its own set of challenges. Learn how to stay productive, maintain a work-life balance, and communicate effectively with your distributed team.",
+    "img_url": "https://picsum.photos/seed/work/800/400",
+    "created_at": "2025-12-27T03:14:09.259Z",
+    "slug": "remote-work-best-practices",
+    "category": 2
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 4,
+  "fields": {
+    "title": "The Rise of Quantum Computing",
+    "content": "Quantum computers leverage the principles of quantum mechanics to solve problems deemed impossible for classical computers. What does this mean for cryptography and drug discovery?",
+    "img_url": "https://picsum.photos/seed/quantum/800/400",
+    "created_at": "2025-12-27T03:14:09.269Z",
+    "slug": "the-rise-of-quantum-computing",
+    "category": 1
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 5,
+  "fields": {
+    "title": "10 Tips for Healthy Living",
+    "content": "A healthy lifestyle is more than just diet and exercise. It involves mental well-being, proper sleep, and stress management. Here are 10 actionable tips to improve your daily life.",
+    "img_url": "https://picsum.photos/seed/health/800/400",
+    "created_at": "2025-12-27T03:14:09.279Z",
+    "slug": "10-tips-for-healthy-living",
+    "category": 2
+  }
+}
 ]
